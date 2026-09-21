@@ -19,10 +19,7 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
    - [How it plays](#how-it-plays)
 2. [How it works](#how-it-works)
    - [Mechanics](#mechanics)
-   - [CoreXY kinematics](#corexy-kinematics)
-   - [Square to coordinate mapping](#square-to-coordinate-mapping)
    - [Electronics](#electronics)
-   - [Firmware](#firmware)
 3. [Bill of materials](#bill-of-materials)
    - [Motion parts](#motion-parts)
    - [Electronic parts](#electronic-parts)
@@ -31,14 +28,14 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
    - [Tools](#tools)
 4. [Board dimensions](#board-dimensions)
 5. [Wiring](#wiring)
-   - [Pin map](#pin-map)
    - [Wiring notes](#wiring-notes)
+     - [Drivers](#drivers)
+     - [Motors](#motors)
+     - [Power](#power)
    - [Wiring diagram](#wiring-diagram)
-6. [Build guide](#build-guide)
-7. [Repository layout](#repository-layout)
-8. [Roadmap](#roadmap)
-9. [Licence](#licence)
-10. [Author](#author)
+6. [Roadmap](#roadmap)
+7. [Licence](#licence)
+8. [Author](#author)
 
 ---
 
@@ -51,16 +48,16 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 - Counts out each move square by square, the way a player would
 - CoreXY motion with two fixed motors
 - Sensorless homing, no limit switches
-- Dice roll on an OLED display, triggered by a lit push button
-- Runs on an Arduino Uno
+- Dice roll on an OLED display, triggered by a push button
+- Runs on an Arduino Uno with a CNC Shield attached
 
 ### How it plays
 
 - One human versus the machine.
-- The human presses the lit push button to roll. The dice result shows on the OLED display.
+- The human presses the button to roll. The dice result shows on the OLED display.
 - The human moves their own piece by hand. The machine tracks the human's position in software.
 - The machine rolls for itself and moves its own piece with the gondola.
-- The machine's piece moves square by square (a roll of 5 goes 1, 2, 3, 4, 5), including through the U-turn at the end of each row. It does not jump straight to the destination.
+- The machine's piece moves square by square. It does not jump straight to the destination.
 - Landing on a snake or ladder triggers a move to the destination square.
 - The human's piece has no magnet, so the gondola does not disturb it when passing underneath.
 
@@ -73,30 +70,10 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 ### Mechanics
 
 - CoreXY belt layout: two fixed motors drive two GT2 belts. Neither motor rides on the gantry.
-- Frameless design. There is no aluminium extrusion frame. Rods, motor mounts and idler blocks mount directly on a base plate.
-- Layout: 2 fixed Y rods, a gantry block on each carrying 2 X rods, carriage in the middle, motors at the front corners, idler blocks at the back.
-- 10 mm smooth rods with SC10UU linear bearing blocks, held by SK10 rod supports.
-- A magnet stack in the carriage (the gondola) couples through the board to a magnet in the machine's playing piece.
+- Layout: 2 fixed Y rods, 2 fixed rods for structural stability, a gantry block on each carrying 2 X rods, carriage in the middle, motors at the front corners.
+- 10 mm smooth rods with linear bearing blocks, held by rod supports.
+- A magnet stack in the gondola moves the machine's piece through the board.
 - Printed parts are made on a Bambu Lab P2S and use M5 heat-set inserts.
-
-### CoreXY kinematics
-
-```
-motor A steps = X + Y
-motor B steps = X - Y
-```
-
-### Square to coordinate mapping
-
-Squares are numbered 1 to 100 in the usual zigzag. No lookup table is needed:
-
-```cpp
-int row = (n - 1) / 10;
-int col = (n - 1) % 10;
-if (row % 2 == 1) col = 9 - col;   // odd rows run right to left
-x = col * SQUARE_MM;
-y = row * SQUARE_MM;
-```
 
 ### Electronics
 
@@ -107,25 +84,6 @@ y = row * SQUARE_MM;
 - 16 mm illuminated push button (Lanboo LB16QC, 5-24 V, 1NO) to roll
 - 5 V active buzzer
 - 12 V 5 A supply with a rocker switch on the 12 V positive line
-
-### Firmware
-
-**Status: planned, not written yet.**
-
-Custom Arduino sketch. GRBL is not used: it has no TMC2209 UART support and leaves no room on the Uno for the display and game logic.
-
-#### Libraries
-
-| Library | Purpose | Licence |
-|---|---|---|
-| TMCStepper | TMC2209 UART configuration and StallGuard | MIT |
-| U8g2 (page-buffer mode) | OLED display | BSD 2-Clause |
-
-#### Design notes
-
-- Step generation is planned as a custom routine. AccelStepper is deliberately not used because its GPLv3 licence conflicts with this project's noncommercial licence.
-- Game state is small: two position bytes plus a snakes-and-ladders table stored in flash.
-- The display and buzzer update only while the motors are stopped, to keep step timing clean.
 
 [Back to top](#table-of-contents)
 
@@ -139,9 +97,9 @@ Custom Arduino sketch. GRBL is not used: it has no TMC2209 UART support and leav
 |---|---|
 | 2 | StepperOnline 17HE15-1504S NEMA17 (42 N·cm, 1.5 A, 1 m detachable cable) |
 | 2 | GT2 20-tooth pulley, 5 mm bore, for 6 mm belt |
-| 8 | GT2 idler, 5 mm bore, for 6 mm belt `[TBC: mix of toothed and smooth]` |
-| `[TBC]` | GT2 open belt, 6 mm wide `[TBC: total length]` |
-| 4 | 10 mm hardened smooth rod `[TBC: length, depends on board size]` |
+| 8 | GT2 idler, 5 mm bore, for 6 mm belt |
+| 2 | 2 meter GT2 open belt, 6 mm wide |
+| 4 | 10 mm hardened smooth rod |
 | 8 | SK10 (SH10A) rod support |
 | 4 | SC10UU linear bearing block |
 | 1 pack | 12 x 2 mm N35 neodymium disc magnets (pack of 20) |
@@ -156,8 +114,8 @@ Custom Arduino sketch. GRBL is not used: it has no TMC2209 UART support and leav
 | 1 | 12 V 5 A power supply, 5.5 mm DC plug |
 | 1 | DC jack socket (female) with moulded wire lead |
 | 1 | DC Y-splitter cable (1 female to 2 male) |
-| 1 | Rocker switch, rated 6 A or higher |
-| 1 | 1.3 inch I2C OLED display, 4 pin |
+| 1 | Rocker switch, 6 A |
+| 1 | 1.3 inch I2C OLED display |
 | 1 | Lanboo LB16QC-P10F 16 mm illuminated push button, blue, 5-24 V, 1NO |
 | 1 | 5 V active buzzer |
 | 1 | 1 kΩ resistor (UART TX to RX link) |
@@ -168,12 +126,10 @@ Custom Arduino sketch. GRBL is not used: it has no TMC2209 UART support and leav
 
 ### Fasteners
 
-| Qty | Part |
-|---|---|
-| `[TBC]` | M5 heat-set inserts |
-| `[TBC]` | M5 bolts (rod supports, bearing blocks, idler axles) |
-| `[TBC]` | M3 x 8 bolts (motor mounting) |
-| `[TBC]` | Washers or shims for idler stacks |
+- M5 heat-set inserts
+- M5 bolts (rod supports, bearing blocks, idler axles)
+- M3 x 8 bolts (motor mounting)
+- Washers or shims for idler stacks
 
 ### Printed parts
 
@@ -205,21 +161,6 @@ Custom Arduino sketch. GRBL is not used: it has no TMC2209 UART support and leav
 
 ## Wiring
 
-### Pin map
-
-| Function | Uno pin |
-|---|---|
-| Motor A step / dir | CNC Shield X axis (D2 / D5) |
-| Motor B step / dir | CNC Shield Y axis (D3 / D6) |
-| Driver enable | D8 |
-| Motor A DIAG | `[TBC]` |
-| Motor B DIAG | `[TBC]` |
-| TMC2209 UART | `[TBC]` |
-| OLED SDA / SCL | A4 / A5 |
-| Push button switch | `[TBC]` |
-| Push button LED | `[TBC]` |
-| Buzzer | `[TBC]` |
-
 ### Wiring notes
 
 #### Drivers
@@ -241,28 +182,6 @@ Custom Arduino sketch. GRBL is not used: it has no TMC2209 UART support and leav
 ### Wiring diagram
 
 [WIRING DIAGRAM: add when final]
-
-[Back to top](#table-of-contents)
-
----
-
-## Build guide
-
-`[TBC: to be written once the first unit is assembled]`
-
-[Back to top](#table-of-contents)
-
----
-
-## Repository layout
-
-```
-firmware/     Arduino sketch                     [TBC]
-hardware/     CAD, STL files, wiring diagrams    [TBC]
-docs/         Photos and build notes             [TBC]
-LICENSE
-README.md
-```
 
 [Back to top](#table-of-contents)
 
