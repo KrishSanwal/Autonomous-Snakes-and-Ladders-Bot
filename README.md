@@ -99,7 +99,7 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 | 2 | GT2 20-tooth pulley, 5 mm bore, for 6 mm belt |
 | 8 | GT2 idler, 5 mm bore, for 6 mm belt |
 | 2 | 2 meter GT2 open belt, 6 mm wide |
-| 4 | 10 mm hardened smooth rod |
+| 6 | 10 mm hardened smooth rod |
 | 8 | SK10 (SH10A) rod support |
 | 4 | SC10UU linear bearing block |
 | 1 pack | 12 x 2 mm N35 neodymium disc magnets (pack of 20) |
@@ -119,8 +119,8 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 | 1 | Lanboo LB16QC-P10F 16 mm illuminated push button, blue, 5-24 V, 1NO |
 | 1 | 5 V active buzzer |
 | 1 | 1 kΩ resistor (UART TX to RX link) |
-| 1 | 1000 µF 25 V electrolytic capacitor (12 V input) |
-| 2 | 100 µF 35 V electrolytic capacitor (driver VMOT) |
+| 2 | 1000 µF 25 V electrolytic capacitor (12 V input) |
+| 3 (2 works) | 100 µF 35 V electrolytic capacitor (driver VMOT) |
 | 1 set | Dupont jumper wires, female-female and male-female |
 | as needed | 3 mm heat shrink sleeve |
 
