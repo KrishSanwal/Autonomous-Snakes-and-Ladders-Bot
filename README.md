@@ -220,5 +220,5 @@ Third-party libraries remain under their own licences.
 
 ## Author
 
-[YOUR FULL NAME]
-[YOUR EMAIL OR GITHUB PROFILE URL]
+Krish Sanwal
+https://github.com/Kawaki1234
