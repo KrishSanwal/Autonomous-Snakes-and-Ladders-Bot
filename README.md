@@ -221,4 +221,4 @@ Third-party libraries remain under their own licences.
 ## Author
 
 Krish Sanwal
-https://github.com/Kawaki1234
+https://github.com/KrishSanwal
