@@ -8,8 +8,6 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 
 > **Status: work in progress.** Hardware is being sourced. Firmware is not written yet. Items marked `[TBC]` are not finalised. Do not order parts from this README until those are resolved.
 
-[PHOTO OR GIF OF THE BOARD: add when built]
-
 ---
 
 ## Table of contents
@@ -178,10 +176,6 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 
 - The rocker switch sits on the 12 V positive line before the Y-splitter, so it cuts power to both the Uno and the shield.
 - The TMC2209 drivers lose their UART configuration when 12 V is removed. Configuration and homing run in `setup()`.
-
-### Wiring diagram
-
-[WIRING DIAGRAM: add when final]
 
 [Back to top](#table-of-contents)
 
