@@ -14,7 +14,6 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 1. [Overview](#overview)
    - [Features](#features)
-   - [How it works](#how-it-works)
 2. [How it works](#how-it-works)
    - [Mechanics](#mechanics)
    - [Electronics](#electronics)
@@ -24,10 +23,8 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
    - [Fasteners](#fasteners)
    - [Printed parts](#printed-parts)
    - [Tools](#tools)
-4. [Board dimensions](#board-dimensions)
-5. [Roadmap](#roadmap)
-6. [Licence](#licence)
-7. [Author](#author)
+4. [Licence](#licence)
+5. [Author](#author)
 
 ---
 
@@ -120,35 +117,6 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 - Soldering iron and solder
 - Multimeter
 - 3D printer (parts here are made on a Bambu Lab P2S)
-
-[Back to top](#table-of-contents)
-
----
-
-## Board dimensions
-
-| Item | Value |
-|---|---|
-| Board size | `[TBC]` |
-| Square size | `[TBC]` |
-| Rod length | `[TBC]` |
-| Gondola travel X / Y | `[TBC]` |
-| Board thickness over gondola | `[TBC]` |
-
-[Back to top](#table-of-contents)
-
----
-
-## Roadmap
-
-- [ ] Finalise board size and rod length
-- [ ] Finish sourcing parts
-- [ ] CAD for base plate, gantry blocks, carriage, motor mounts and idler blocks
-- [ ] Test magnet coupling through the board
-- [ ] Firmware: TMC2209 UART setup and sensorless homing
-- [ ] Firmware: CoreXY motion and square-by-square moves
-- [ ] Firmware: game logic, OLED, button and buzzer
-- [ ] Build guide and photos
 
 [Back to top](#table-of-contents)
 
