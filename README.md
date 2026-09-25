@@ -14,7 +14,7 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 1. [Overview](#overview)
    - [Features](#features)
-   - [How it plays](#how-it-plays)
+   - [How it works](#how-it-works)
 2. [How it works](#how-it-works)
    - [Mechanics](#mechanics)
    - [Electronics](#electronics)
