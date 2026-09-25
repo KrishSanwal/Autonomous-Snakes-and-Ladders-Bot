@@ -4,7 +4,7 @@
 ![Licence](https://img.shields.io/badge/licence-CC_BY--NC--SA_4.0-blue)
 ![Platform](https://img.shields.io/badge/platform-Arduino_Uno-teal)
 
-A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidden under the board moves a magnetic gondola, which drags the machine's playing piece across the squares from below. Homing is sensorless (TMC2209 StallGuard), so there are no limit switches.
+A Snakes and Ladders board that plays against a human. A CoreXY mechanism is used under the board and it moves a gondola connected to a magnet, which drags the machine's piece across the board. Homing is sensorless, so there are no limit switches.
 
 > **Status: work in progress.** Hardware is being sourced. Firmware is not written yet. Items marked `[TBC]` are not finalised. Do not order parts from this README until those are resolved.
 
@@ -41,23 +41,12 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 
 ### Features
 
-- Plays a full game of Snakes and Ladders against one human
-- Moves its own piece from under the board with a magnet, no visible mechanism
-- Counts out each move square by square, the way a player would
-- CoreXY motion with two fixed motors
-- Sensorless homing, no limit switches
-- Dice roll on an OLED display, triggered by a push button
-- Runs on an Arduino Uno with a CNC Shield attached
-
-### How it plays
-
-- One human versus the machine.
-- The human presses the button to roll. The dice result shows on the OLED display.
-- The human moves their own piece by hand. The machine tracks the human's position in software.
-- The machine rolls for itself and moves its own piece with the gondola.
-- The machine's piece moves square by square. It does not jump straight to the destination.
-- Landing on a snake or ladder triggers a move to the destination square.
-- The human's piece has no magnet, so the gondola does not disturb it when passing underneath.
+- Plays a game of Snakes and Ladders against a human.
+- Moves its own piece from under the board with a magnet, no visible mechanism.
+- Remembers the position of the human's piece and it's piece so it knows who won.
+- Sensor-less homing and therefore no limit switches are needed.
+- Dice is rolled on an OLED display using a button.
+- Runs on an Arduino Uno with a CNC Shield unit on it.
 
 [Back to top](#table-of-contents)
 
@@ -67,19 +56,18 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 
 ### Mechanics
 
-- CoreXY belt layout: two fixed motors drive two GT2 belts. Neither motor rides on the gantry.
-- Layout: 2 fixed Y rods, 2 fixed rods for structural stability, a gantry block on each carrying 2 X rods, carriage in the middle, motors at the front corners.
+- CoreXY belt layout: two fixed motors drive two GT2 belts (design inspired from bambulab 3d printers).
+- Layout: 2 fixed Y rods, 4 fixed rods for structural stability, motors are on the bottom corners.
 - 10 mm smooth rods with linear bearing blocks, held by rod supports.
-- A magnet stack in the gondola moves the machine's piece through the board.
-- Printed parts are made on a Bambu Lab P2S and use M5 heat-set inserts.
+- A magnet stack in the gondola moves the machine's piece.
 
 ### Electronics
 
 - Arduino Uno R3 with CNC Shield V3
-- 2x TMC2209 stepper drivers, configured over UART
-- Sensorless homing: each driver's DIAG output is wired to a limit input, and the StallGuard threshold is set over UART
+- 2x NEMA 17 Stepper Motors
+- 2x TMC2209 stepper drivers
 - 1.3 inch I2C OLED for dice and messages
-- 16 mm illuminated push button (Lanboo LB16QC, 5-24 V, 1NO) to roll
+- 16 mm illuminated push button (Lanboo LB16QC, 5-24 V, 1NO)
 - 5 V active buzzer
 - 12 V 5 A supply with a rocker switch on the 12 V positive line
 
@@ -152,30 +140,6 @@ A Snakes and Ladders board that plays against you. A CoreXY belt mechanism hidde
 | Rod length | `[TBC]` |
 | Gondola travel X / Y | `[TBC]` |
 | Board thickness over gondola | `[TBC]` |
-
-[Back to top](#table-of-contents)
-
----
-
-## Wiring
-
-### Wiring notes
-
-#### Drivers
-
-- Both TMC2209 drivers share one UART line. They are addressed through MS1/MS2: driver 1 with no jumpers (address 0), driver 2 with the M0 jumper fitted (address 1). Microstepping is set by register.
-- Leave the M2 jumper position open on the CNC Shield. On most TMC2209 modules that position lands on a UART pin. Check the pinout of your module.
-- DIAG is active-high. The CNC Shield limit inputs expect active-low switches, so the input is inverted in firmware.
-
-#### Motors
-
-- Check motor coil pairs with a multimeter before plugging in. Cable pin order may not match the shield.
-- **Never connect or disconnect a motor while the drivers are powered.** This can destroy the driver.
-
-#### Power
-
-- The rocker switch sits on the 12 V positive line before the Y-splitter, so it cuts power to both the Uno and the shield.
-- The TMC2209 drivers lose their UART configuration when 12 V is removed. Configuration and homing run in `setup()`.
 
 [Back to top](#table-of-contents)
 
