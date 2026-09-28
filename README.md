@@ -125,7 +125,30 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 ## BOM
 
-<img width="2553" height="641" alt="image" src="https://github.com/user-attachments/assets/cc7c6fed-702d-4e53-a442-a37e8f7e343a" />
+## Bill of Materials
+
+| Component | Qty | Price (USD) | Price (INR) | Link |
+|---|---:|---:|---:|---|
+| Lanboo LB16QC-P10F 16mm push button switch, blue, DC 5-24V, 1NO | 1 | $4.62 | ₹442.00 | [Robu](https://robu.in/product/lb16qc-p10f-lanboo-16mm-tact-push-button-switch-bluedc-5-24v1no/) |
+| 6A 250V AC SPST ON-OFF rocker switch | 1 | $0.17 | ₹16.00 | [Robu](https://robu.in/product/6a-250v-ac-spst-on-off-rocker-switch/) |
+| UNI-T UT890D+ digital multimeter, True RMS 6000 count | 1 | $19.83 | ₹1,899.00 | [Robu](https://robu.in/product/uni-t-ut890d-digital-multimeter/) |
+| Serplex 12-in-1 soldering iron tool kit 80W | 1 | $16.70 | ₹1,599.00 | [Amazon](https://www.amazon.in/gp/product/B0G2H4J193) |
+| Electronic Spices DC female to 2 male Y-splitter cable | 1 | $1.24 | ₹119.00 | [Amazon](https://www.amazon.in/gp/product/B08PRS2Q23) |
+| INVENTO EN31 steel smooth rod 10mm x 300mm (2 pcs) | 3 | $11.56 | ₹1,107.00 | [Amazon](https://www.amazon.in/gp/product/B071W8FKQV) |
+| SNOOGG 12 x 2 mm N35 neodymium disc magnets, pack of 20 | 1 | $3.96 | ₹379.00 | [Amazon](https://www.amazon.in/gp/product/B0DMVKSZ74) |
+| Flyrobo GT2 idler pulley without teeth, 5mm bore, for 6mm belt | 8 | $23.64 | ₹2,264.00 | [Amazon](https://www.amazon.in/gp/product/B0H7K3W1P3) |
+| Self Lub GT2 timing belt 2 m x 6mm, open | 2 | $9.38 | ₹898.00 | [Amazon](https://www.amazon.in/gp/product/B0HCLLLB88) |
+| M5 x 35mm Phillips pan head screw | 10 | $0.29 | ₹28.00 | [OnlyScrews](https://onlyscrews.in/products/m5-x-35mm-phillips-pan-head-mild-steel-with-zinc-blue-plating-screw-dia-5mm-length-35mm?variant=52692527186233) |
+| M5 x 15mm Phillips pan head screw | 20 | $0.33 | ₹32.00 | [OnlyScrews](https://onlyscrews.in/products/m5-x-15mm-phillips-pan-head-mild-steel-with-zinc-blue-plating-screw-dia-5mm-length-15mm?variant=52691038503225) |
+| M5 x 10mm Phillips pan head screw | 25 | $0.37 | ₹35.00 | [OnlyScrews](https://onlyscrews.in/products/m5-x-10mm-phillips-pan-head-mild-steel-with-zinc-blue-plating-screw-dia-5mm-length-10mm?variant=52690606784825) |
+| M5 x 5mm brass threaded inserts | 67 | $1.54 | ₹147.40 | [OnlyScrews](https://onlyscrews.in/products/m5-x-5mm-brass-threaded-inserts-dia-5mm-length-5mm?variant=51217096835385) |
+| M3 x 3mm brass threaded inserts | 30 | $0.75 | ₹72.00 | [OnlyScrews](https://onlyscrews.in/products/m3-x-3mm-brass-threaded-inserts?variant=49729062273337) |
+| M5 plain washer SS304 (ID 5.4mm, OD 9.8mm, T 1mm) | 25 | $0.31 | ₹30.00 | [OnlyScrews](https://onlyscrews.in/products/m5-washer-ss304?variant=48883899105593) |
+| M3 x 6mm Phillips pan head screw SS304 | 9 | $0.15 | ₹14.40 | [OnlyScrews](https://onlyscrews.in/products/phillips-pan-head-m3-x-6mm-pack-of-20?variant=48468588757305) |
+| M3 x 10mm Phillips pan head screw SS304 | 15 | $0.28 | ₹27.00 | [OnlyScrews](https://onlyscrews.in/products/phillips-pan-head-m3-x-10mm-pack-of-20?variant=48468583874873) |
+| M3 x 16mm Phillips pan head screw SS304 | 5 | $0.11 | ₹11.00 | [OnlyScrews](https://onlyscrews.in/products/phillips-pan-head-m3-x-16mm-pack-of-20?variant=48468578959673) |
+| M5 hex nut SS304 | 4 | $0.058 | ₹5.60 | [OnlyScrews](https://onlyscrews.in/a/search?q=m5+nut&options%5Bprefix%5D=last) |
+| **Total** | | **~$154** | **₹14,599.21** | |
 
 
 
