@@ -72,35 +72,35 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 | Qty | Part | Price (USD) | Price (INR) | Link |
 |---:|---|---:|---:|---|
-| 2 | StepperOnline 17HE15-1504S NEMA17 (42 N·cm, 1.5 A, 1 m detachable cable) | $15.65 | ₹1,498.00 | - |
-| 2 (1 pack) | Aluminium GT2 20-tooth pulley, 5 mm bore, for 6 mm belt | $1.45 | ₹139.00 | - |
+| 2 | StepperOnline 17HE15-1504S NEMA17 (42 N·cm, 1.5 A, 1 m detachable cable) | $15.64 | ₹1,498.00 | [Robu](https://robu.in/product/stepperonline-nema-17-42ncm-bipolar-stepper-motor/) |
+| 2 (1 pack) | Aluminium GT2 20-tooth pulley, 5 mm bore, for 6 mm belt | $1.37 | ₹131.00 | [Robu](https://robu.in/product/aluminum-gt2-timing-pulley-for-6mm-belt-20-tooth-5mm-bore-2pcs/) |
 | 8 | Flyrobo GT2 idler pulley without teeth, 5 mm bore, for 6 mm belt | $23.64 | ₹2,264.00 | [Amazon](https://www.amazon.in/gp/product/B0H7K3W1P3) |
 | 2 | Self Lub GT2 timing belt 2 m x 6 mm, open | $9.38 | ₹898.00 | [Amazon](https://www.amazon.in/gp/product/B0HCLLLB88) |
 | 6 (3 packs of 2) | INVENTO EN31 steel smooth rod 10 mm x 300 mm | $11.56 | ₹1,107.00 | [Amazon](https://www.amazon.in/gp/product/B071W8FKQV) |
-| 8 | Two Trees SK10 (SH10A) rod support | $5.85 | ₹560.00 | - |
-| 4 | SC10UU 10 mm linear bearing block | $7.06 | ₹676.00 | - |
+| 8 | Two Trees SK10 (SH10A) rod support | $5.85 | ₹560.00 | [Robu](https://robu.in/product/sk10-10mm-linear-bearing-rail-support-xyz-shaft-table-cnc-router-sh10a/) |
+| 4 | SC10UU 10 mm linear bearing block | $6.39 | ₹612.00 | [Robu](https://robu.in/product/sc10uu-10-mm-linear-ball-bearing-slide-unit-cnc-3d-printer/) |
 | 1 pack | SNOOGG 12 x 2 mm N35 neodymium disc magnets (pack of 20) | $3.96 | ₹379.00 | [Amazon](https://www.amazon.in/gp/product/B0DMVKSZ74) |
 
 ### Electronic parts
 
 | Qty | Part | Price (USD) | Price (INR) | Link |
 |---:|---|---:|---:|---|
-| 1 | Arduino Uno R3 with USB cable | $4.43 | ₹423.72 | - |
-| 1 | CNC Shield V3 | $1.14 | ₹109.00 | - |
-| 2 | TMC2209 stepper driver module with heatsink (must expose DIAG and UART pins) | $14.40 | ₹1,378.00 | - |
-| 1 | 12 V 5 A power supply, 5.5 mm DC plug | $4.44 | ₹425.00 | - |
-| 1 | DC jack socket (female) with moulded wire lead | $0.22 | ₹21.00 | - |
+| 1 | Arduino Uno R3 with USB cable | $4.17 | ₹398.97 | [Robu](https://robu.in/product/arduino-uno-r3/) |
+| 1 | CNC Shield V3 | $1.03 | ₹99.00 | [Robu](https://robu.in/product/cnc-shield-v3-engraving-machine-3d-printer-a4988-drv8825-driver-expansion-board/) |
+| 2 | TMC2209 stepper driver module with heatsink (must expose DIAG and UART pins) | $13.55 | ₹1,298.00 | [Robu](https://robu.in/product/tmc2209-stepper-motor-driver-module-with-heatsink/) |
+| 1 | 12 V 5 A 60 W power supply, 5.5 mm DC plug | $4.44 | ₹425.00 | [Robu](https://robu.in/product/orange-ac-100-240v-to-dc-12v-5a-60w-power-adapter/) |
+| 1 | DC jack socket (female) with moulded wire lead, 15 cm | $0.22 | ₹21.00 | [Robu](https://robu.in/product/5mm-dc-jack-socket-female-jack-socket-with-wire/) |
 | 1 | Electronic Spices DC female to 2 male Y-splitter cable | $1.24 | ₹119.00 | [Amazon](https://www.amazon.in/gp/product/B08PRS2Q23) |
 | 1 | 6A 250V AC SPST ON-OFF rocker switch | $0.17 | ₹16.00 | [Robu](https://robu.in/product/6a-250v-ac-spst-on-off-rocker-switch/) |
-| 1 | 1.3 inch I2C OLED display | $3.23 | ₹309.00 | - |
+| 1 | 1.3 inch I2C OLED display, blue | $3.02 | ₹289.00 | [Robu](https://robu.in/product/1-3-inch-i2c-iic-4-pin-oled-display-module-with-vcc-gnd-blue/) |
 | 1 | Lanboo LB16QC-P10F 16 mm push button switch, blue, DC 5-24V, 1NO | $4.62 | ₹442.00 | [Robu](https://robu.in/product/lb16qc-p10f-lanboo-16mm-tact-push-button-switch-bluedc-5-24v1no/) |
-| 1 | 5 V active buzzer | $0.19 | ₹18.00 | - |
-| 30 (1 needed) | 1 kΩ 0.25 W metal film resistor (UART TX to RX link) | $0.11 | ₹10.20 | - |
-| 2 | 1000 µF 25 V electrolytic capacitor (12 V input) | $0.25 | ₹24.00 | - |
-| 4 (3 needed, 2 works) | 100 µF 35 V electrolytic capacitor (driver VMOT) | $0.16 | ₹15.64 | - |
-| 1 set | Dupont jumper wires, female-female, 20 cm, 40 pcs | $0.51 | ₹49.00 | - |
-| 1 set | Dupont jumper wires, male-female, 20 cm, 10 pcs | $0.14 | ₹13.00 | - |
-| 4 | 3 mm heat shrink sleeve | $0.25 | ₹24.00 | - |
+| 1 | 5 V active buzzer | $0.17 | ₹16.00 | [Robu](https://robu.in/product/5v-active-electromagnetic-buzzer-pack-of-5/) |
+| 17 (1 needed) | 1 kΩ 0.25 W metal film resistor (UART TX to RX link) | $0.11 | ₹10.20 | [Robu](https://robu.in/product/1k-ohm-0-25w-metal-film-resistor-pack-of-100/) |
+| 2 | 1000 µF 25 V electrolytic capacitor (12 V input) | $0.23 | ₹22.00 | [Robu](https://robu.in/product/1000uf-25v-electrolytic-capacitor-dip-pack-of-5/) |
+| 4 (3 needed, 2 works) | Rubycon 35ZLH100M 100 µF 35 V electrolytic capacitor (driver VMOT) | $0.16 | ₹15.64 | [Robu](https://robu.in/product/35zlh100mefct16-3x11-rubycon-100uf-35v-%c2%b120-plugind6-3xl11mm-aluminum-electrolytic-capacitors-leaded-rohs/) |
+| 1 set | Dupont jumper wires, female-female, 20 cm, 40 pcs | $0.43 | ₹41.00 | [Robu](https://robu.in/product/20cm-dupont-wire-color-jumper-cable-2-54mm-1p-1p-female-female-40pcs/) |
+| 1 set | Dupont jumper wires, male-female, 20 cm, 10 pcs | $0.14 | ₹13.00 | [Robu](https://robu.in/product/10-wire-male-to-female-jumper-wires-20cm/) |
+| 4 | 3 mm black heat shrink sleeve | $0.25 | ₹24.00 | [Robu](https://robu.in/product/heat-shrink-sleeve-3mm-black-industrial-grade-woer-hst/) |
 
 ### Fasteners
 
@@ -132,7 +132,7 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 ### Total
 
-**~$155 (₹14,817.96)**
+**~$154 (₹14,599.21)**
 
 [Back to top](#table-of-contents)
 
