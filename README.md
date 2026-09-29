@@ -39,7 +39,6 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 - Dice is rolled on an OLED display using a button.
 - Runs on an Arduino Uno with a CNC Shield unit on it.
 
-[Back to top](#table-of-contents)
 
 ---
 
@@ -62,7 +61,6 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 - 5 V active buzzer
 - 12 V 5 A supply with a rocker switch on the 12 V positive line
 
-[Back to top](#table-of-contents)
 
 ---
 
@@ -134,7 +132,6 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 **~$154 (₹14,599.21)**
 
-[Back to top](#table-of-contents)
 
 
 
@@ -153,7 +150,6 @@ This project is source-available, not open source as defined by OSI or OSHWA.
 
 Third-party libraries remain under their own licences.
 
-[Back to top](#table-of-contents)
 
 ---
 
