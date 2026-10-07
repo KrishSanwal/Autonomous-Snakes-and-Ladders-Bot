@@ -22,6 +22,7 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
    - [Fasteners](#fasteners)
    - [Tools](#tools)
 4. [3D Files](#3d-files)
+   - [Full System with Top](#full-system-with-top)
    - [Full System](#full-system)
    - [Outer Frame](#outer-frame)
    - [Gondola System](#gondola-system)
@@ -135,7 +136,13 @@ This board uses a CoreXY Mechanism that consists of two static motors (motors do
 
 ## 3D Files
 
-### Full Mechanism
+### Full System With Top
+
+<img width="1693" height="1005" alt="image" src="https://github.com/user-attachments/assets/8a36f232-bd1f-4512-937f-28fdac9ad598" />
+
+
+
+### Full System
 
 <img width="2341" height="1418" alt="image" src="https://github.com/user-attachments/assets/59de0603-c4f7-4933-ae95-05ef2ce7b841" />
 
