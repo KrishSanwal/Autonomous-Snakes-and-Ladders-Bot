@@ -35,6 +35,8 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 ## Overview
 
+I made this project as there is a lot of use of CoreXY Mechanisms in large industrial machines such as CNCs, 3D Printers, Mills etc. Showcasing this mechanism through a board game makes it easy to understand as you do not have any other pieces except the ones needed for 2D movement.
+
 ### Features
 
 - Plays a game of Snakes and Ladders against a human.
