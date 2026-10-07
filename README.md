@@ -15,16 +15,19 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 1. [Overview](#overview)
    - [Features](#features)
 2. [How it works](#how-it-works)
-   - [Mechanics](#mechanics)
    - [Electronics](#electronics)
 3. [Bill of materials](#bill-of-materials)
    - [Motion parts](#motion-parts)
    - [Electronic parts](#electronic-parts)
    - [Fasteners](#fasteners)
-   - [Printed parts](#printed-parts)
    - [Tools](#tools)
-4. [Licence](#licence)
-5. [Author](#author)
+4. [3D Files](#3d-files)
+   - [Full System](#full-system)
+   - [Outer Frame](#outer-frame)
+   - [Gondola System](#gondola-system)
+6. [Wiring Diagram](#wiring-diagram)
+7. [Licence](#licence)
+8. [Author](#author)
 
 ---
 
@@ -44,12 +47,7 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 ## How it works
 
-### Mechanics
-
-- CoreXY belt layout: two fixed motors drive two GT2 belts (design inspired from bambulab 3d printers).
-- Layout: 2 fixed Y rods, 4 fixed rods for structural stability, motors are on the bottom corners.
-- 10 mm smooth rods with linear bearing blocks, held by rod supports.
-- A magnet stack in the gondola moves the machine's piece.
+This board uses a CoreXY Mechanism that consists of two static motors (motors don't move) on the front end of the board that control the main magnetic piece using timing belts. The movement happens by spinning either one of the motors or both of them. The motors move the magnetic gondola to set positions that translate to movement on the top board surface where a magnetic piece moves with the gondola. The game is played turn based and the dice is on a OLED screen activated by a push button. An E-Dice will help the machine know how much to move and also helps to tell the machine if the player has reached the end without the use of any physical sensors.
 
 ### Electronics
 
@@ -115,9 +113,6 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 | 5 | M3 x 16mm Phillips pan head screw SS304 | $0.11 | ₹11.00 | [OnlyScrews](https://onlyscrews.in/products/phillips-pan-head-m3-x-16mm-pack-of-20?variant=48468578959673) |
 | 4 | M5 hex nut SS304 | $0.058 | ₹5.60 | [OnlyScrews](https://onlyscrews.in/a/search?q=m5+nut&options%5Bprefix%5D=last) |
 
-### Printed parts
-
-`[TBC: list of STL files once CAD is final]`
 
 ### Tools
 
@@ -134,9 +129,26 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 
 
 
-
 ---
 
+## 3D Files
+
+### Full Mechanism
+
+
+
+### Outer Frame
+
+
+
+### Gondola System
+
+
+
+
+
+
+---
 
 ## Licence
 
