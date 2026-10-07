@@ -135,13 +135,27 @@ This board uses a CoreXY Mechanism that consists of two static motors (motors do
 
 ### Full Mechanism
 
+<img width="2341" height="1418" alt="image" src="https://github.com/user-attachments/assets/59de0603-c4f7-4933-ae95-05ef2ce7b841" />
+
 
 
 ### Outer Frame
 
+<img width="2098" height="1297" alt="image" src="https://github.com/user-attachments/assets/83d343a7-ea52-4070-b1db-59044d644bd9" />
+
 
 
 ### Gondola System
+
+<img width="1881" height="910" alt="image" src="https://github.com/user-attachments/assets/5170f346-471b-41fd-af13-47a27407a2d2" />
+
+
+
+---
+## Wiring Diagram
+This project does not use a custom PCB rather relies on an Arduino Board with a CNC Shield Attachment.
+
+<img width="1012" height="502" alt="image" src="https://github.com/user-attachments/assets/44a18601-ab82-4e4c-b1ba-40671bcdc24d" />
 
 
 
@@ -149,7 +163,6 @@ This board uses a CoreXY Mechanism that consists of two static motors (motors do
 
 
 ---
-
 ## Licence
 
 Licensed under CC BY-NC-SA 4.0. See [LICENSE](LICENSE).
