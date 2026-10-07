@@ -42,7 +42,7 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
 - Remembers the position of the human's piece and it's piece so it knows who won.
 - Sensor-less homing and therefore no limit switches are needed.
 - Dice is rolled on an OLED display using a button.
-- Runs on an Arduino Uno with a CNC Shield unit on it.
+- Runs on an Arduino Uno with a CNC Shield unit on it therefore does not need a custom PCB.
 
 
 ---
