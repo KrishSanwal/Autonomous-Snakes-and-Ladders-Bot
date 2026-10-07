@@ -25,6 +25,7 @@ A Snakes and Ladders board that plays against a human. A CoreXY mechanism is use
    - [Full System](#full-system)
    - [Outer Frame](#outer-frame)
    - [Gondola System](#gondola-system)
+   - [Top Cover](#top-cover)
 6. [Wiring Diagram](#wiring-diagram)
 7. [Licence](#licence)
 8. [Author](#author)
@@ -131,6 +132,7 @@ This board uses a CoreXY Mechanism that consists of two static motors (motors do
 
 ---
 
+
 ## 3D Files
 
 ### Full Mechanism
@@ -151,7 +153,16 @@ This board uses a CoreXY Mechanism that consists of two static motors (motors do
 
 
 
+## Top Cover
+
+<img width="2018" height="1188" alt="image" src="https://github.com/user-attachments/assets/04b82999-9159-440e-b23c-0d20e92f8948" />
+
+
+
+
 ---
+
+
 ## Wiring Diagram
 This project does not use a custom PCB rather relies on an Arduino Board with a CNC Shield Attachment.
 
@@ -163,6 +174,8 @@ This project does not use a custom PCB rather relies on an Arduino Board with a 
 
 
 ---
+
+
 ## Licence
 
 Licensed under CC BY-NC-SA 4.0. See [LICENSE](LICENSE).
@@ -177,6 +190,7 @@ Third-party libraries remain under their own licences.
 
 
 ---
+
 
 ## Author
 
