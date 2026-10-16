@@ -140,13 +140,15 @@ This board uses a CoreXY Mechanism that consists of two static motors (motors do
 
 ### Full System With Top
 
-<img width="1693" height="1005" alt="image" src="https://github.com/user-attachments/assets/8a36f232-bd1f-4512-937f-28fdac9ad598" />
+<img width="2177" height="935" alt="image" src="https://github.com/user-attachments/assets/4cda20a5-f94f-4dcf-9f2f-45f7f17f2a47" />
+
 
 
 
 ### Full System
 
-<img width="2341" height="1418" alt="image" src="https://github.com/user-attachments/assets/59de0603-c4f7-4933-ae95-05ef2ce7b841" />
+<img width="2002" height="1167" alt="image" src="https://github.com/user-attachments/assets/68f09709-1533-406c-88b5-8c825233b9df" />
+
 
 
 
