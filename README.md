@@ -4,7 +4,7 @@
 ![Licence](https://img.shields.io/badge/licence-CC_BY--NC--SA_4.0-blue)
 ![Platform](https://img.shields.io/badge/platform-Arduino_Uno-teal)
 
-A Snakes and Ladders board that plays against a human. A CoreXY mechanism is used under the board and it moves a gondola connected to a magnet, which drags the machine's piece across the board. Features sensorless homing as seen in many FDM printers.
+A Snakes and Ladders board that plays against a human. A CoreXY mechanism is used under the board and it moves a gondola connected to a magnet, which drags the machine's piece across the board. Features sensorless homing as seen in many FDM printers. This project is a dive into the world of corexy mechanics and a fun way to learn about how rotational motion is translated to planar motion using a game.
 
 > **Status: work in progress.** Hardware is being sourced. Firmware is not written yet. Items marked `[TBC]` are not finalised. Do not order parts from this README until those are resolved.
 
